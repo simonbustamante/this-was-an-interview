@@ -1,0 +1,18 @@
+[2024-01-21T23:41:53.926+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: daily_data_downloader_and_plotter.wait_for_data manual__2024-01-21T23:40:49.481433+00:00 [queued]>
+[2024-01-21T23:41:53.934+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: daily_data_downloader_and_plotter.wait_for_data manual__2024-01-21T23:40:49.481433+00:00 [queued]>
+[2024-01-21T23:41:53.934+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 2
+[2024-01-21T23:41:53.969+0000] {taskinstance.py:2191} INFO - Executing <Task(SqlSensor): wait_for_data> on 2024-01-21 23:40:49.481433+00:00
+[2024-01-21T23:41:53.975+0000] {standard_task_runner.py:60} INFO - Started process 77 to run task
+[2024-01-21T23:41:53.977+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'daily_data_downloader_and_plotter', 'wait_for_data', 'manual__2024-01-21T23:40:49.481433+00:00', '--job-id', '60', '--raw', '--subdir', 'DAGS_FOLDER/dag_daily_data_downloader_and_plotter.py', '--cfg-path', '/tmp/tmp4osz9d_l']
+[2024-01-21T23:41:53.979+0000] {standard_task_runner.py:88} INFO - Job 60: Subtask wait_for_data
+[2024-01-21T23:41:54.054+0000] {task_command.py:423} INFO - Running <TaskInstance: daily_data_downloader_and_plotter.wait_for_data manual__2024-01-21T23:40:49.481433+00:00 [running]> on host d8f71f18ea69
+[2024-01-21T23:41:54.442+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='daily_data_downloader_and_plotter' AIRFLOW_CTX_TASK_ID='wait_for_data' AIRFLOW_CTX_EXECUTION_DATE='2024-01-21T23:40:49.481433+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-01-21T23:40:49.481433+00:00'
+[2024-01-21T23:41:54.456+0000] {base.py:83} INFO - Using connection ID 'postgres_stock_conn' for task execution.
+[2024-01-21T23:41:54.460+0000] {sql.py:95} INFO - Poking: SELECT COUNT(*) FROM coin_data WHERE coin='bitcoin' AND date='2024-01-21' (with parameters None)
+[2024-01-21T23:41:54.465+0000] {base.py:83} INFO - Using connection ID 'postgres_stock_conn' for task execution.
+[2024-01-21T23:41:54.469+0000] {sql.py:450} INFO - Running statement: SELECT COUNT(*) FROM coin_data WHERE coin='bitcoin' AND date='2024-01-21', parameters: None
+[2024-01-21T23:41:54.471+0000] {sql.py:459} INFO - Rows affected: 1
+[2024-01-21T23:41:54.471+0000] {base.py:295} INFO - Success criteria met. Exiting.
+[2024-01-21T23:41:54.480+0000] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=daily_data_downloader_and_plotter, task_id=wait_for_data, execution_date=20240121T234049, start_date=20240121T234153, end_date=20240121T234154
+[2024-01-21T23:41:54.552+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2024-01-21T23:41:54.618+0000] {taskinstance.py:3280} INFO - 1 downstream tasks scheduled from follow-on schedule check

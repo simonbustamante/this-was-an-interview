@@ -1,0 +1,49 @@
+[2024-01-21T23:40:17.128+0000] {processor.py:161} INFO - Started process (PID=30) to work on /opt/airflow/dags/dag_crypto_downloader.py
+[2024-01-21T23:40:17.129+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dag_crypto_downloader.py for tasks to queue
+[2024-01-21T23:40:17.139+0000] {logging_mixin.py:188} INFO - [2024-01-21T23:40:17.139+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dag_crypto_downloader.py
+[2024-01-21T23:40:17.166+0000] {processor.py:840} INFO - DAG(s) 'daily_data_downloader' retrieved from /opt/airflow/dags/dag_crypto_downloader.py
+[2024-01-21T23:40:17.415+0000] {logging_mixin.py:188} INFO - [2024-01-21T23:40:17.415+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-01-21T23:40:17.451+0000] {logging_mixin.py:188} INFO - [2024-01-21T23:40:17.450+0000] {dag.py:3823} INFO - Setting next_dagrun for daily_data_downloader to 2024-01-21 08:00:00+00:00, run_after=2024-01-22 08:00:00+00:00
+[2024-01-21T23:40:17.509+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dag_crypto_downloader.py took 0.392 seconds
+[2024-01-21T23:40:47.734+0000] {processor.py:161} INFO - Started process (PID=39) to work on /opt/airflow/dags/dag_crypto_downloader.py
+[2024-01-21T23:40:47.748+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dag_crypto_downloader.py for tasks to queue
+[2024-01-21T23:40:47.751+0000] {logging_mixin.py:188} INFO - [2024-01-21T23:40:47.751+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dag_crypto_downloader.py
+[2024-01-21T23:40:47.774+0000] {processor.py:840} INFO - DAG(s) 'daily_data_downloader' retrieved from /opt/airflow/dags/dag_crypto_downloader.py
+[2024-01-21T23:40:47.811+0000] {logging_mixin.py:188} INFO - [2024-01-21T23:40:47.811+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-01-21T23:40:47.833+0000] {logging_mixin.py:188} INFO - [2024-01-21T23:40:47.833+0000] {dag.py:3823} INFO - Setting next_dagrun for daily_data_downloader to 2024-01-21 08:00:00+00:00, run_after=2024-01-22 08:00:00+00:00
+[2024-01-21T23:40:47.881+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dag_crypto_downloader.py took 0.154 seconds
+[2024-01-21T23:41:18.173+0000] {processor.py:161} INFO - Started process (PID=49) to work on /opt/airflow/dags/dag_crypto_downloader.py
+[2024-01-21T23:41:18.183+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dag_crypto_downloader.py for tasks to queue
+[2024-01-21T23:41:18.186+0000] {logging_mixin.py:188} INFO - [2024-01-21T23:41:18.186+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dag_crypto_downloader.py
+[2024-01-21T23:41:18.207+0000] {processor.py:840} INFO - DAG(s) 'daily_data_downloader' retrieved from /opt/airflow/dags/dag_crypto_downloader.py
+[2024-01-21T23:41:18.231+0000] {logging_mixin.py:188} INFO - [2024-01-21T23:41:18.231+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-01-21T23:41:18.254+0000] {logging_mixin.py:188} INFO - [2024-01-21T23:41:18.254+0000] {dag.py:3823} INFO - Setting next_dagrun for daily_data_downloader to 2024-01-21 08:00:00+00:00, run_after=2024-01-22 08:00:00+00:00
+[2024-01-21T23:41:18.323+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dag_crypto_downloader.py took 0.158 seconds
+[2024-01-21T23:41:48.398+0000] {processor.py:161} INFO - Started process (PID=58) to work on /opt/airflow/dags/dag_crypto_downloader.py
+[2024-01-21T23:41:48.407+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dag_crypto_downloader.py for tasks to queue
+[2024-01-21T23:41:48.409+0000] {logging_mixin.py:188} INFO - [2024-01-21T23:41:48.409+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dag_crypto_downloader.py
+[2024-01-21T23:41:48.420+0000] {processor.py:840} INFO - DAG(s) 'daily_data_downloader' retrieved from /opt/airflow/dags/dag_crypto_downloader.py
+[2024-01-21T23:41:48.442+0000] {logging_mixin.py:188} INFO - [2024-01-21T23:41:48.442+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-01-21T23:41:48.462+0000] {logging_mixin.py:188} INFO - [2024-01-21T23:41:48.461+0000] {dag.py:3823} INFO - Setting next_dagrun for daily_data_downloader to 2024-01-21 08:00:00+00:00, run_after=2024-01-22 08:00:00+00:00
+[2024-01-21T23:41:48.514+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dag_crypto_downloader.py took 0.121 seconds
+[2024-01-21T23:42:18.712+0000] {processor.py:161} INFO - Started process (PID=67) to work on /opt/airflow/dags/dag_crypto_downloader.py
+[2024-01-21T23:42:18.725+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dag_crypto_downloader.py for tasks to queue
+[2024-01-21T23:42:18.731+0000] {logging_mixin.py:188} INFO - [2024-01-21T23:42:18.730+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dag_crypto_downloader.py
+[2024-01-21T23:42:18.761+0000] {processor.py:840} INFO - DAG(s) 'daily_data_downloader' retrieved from /opt/airflow/dags/dag_crypto_downloader.py
+[2024-01-21T23:42:18.785+0000] {logging_mixin.py:188} INFO - [2024-01-21T23:42:18.785+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-01-21T23:42:18.804+0000] {logging_mixin.py:188} INFO - [2024-01-21T23:42:18.804+0000] {dag.py:3823} INFO - Setting next_dagrun for daily_data_downloader to 2024-01-21 08:00:00+00:00, run_after=2024-01-22 08:00:00+00:00
+[2024-01-21T23:42:18.854+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dag_crypto_downloader.py took 0.147 seconds
+[2024-01-21T23:42:49.114+0000] {processor.py:161} INFO - Started process (PID=76) to work on /opt/airflow/dags/dag_crypto_downloader.py
+[2024-01-21T23:42:49.134+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dag_crypto_downloader.py for tasks to queue
+[2024-01-21T23:42:49.144+0000] {logging_mixin.py:188} INFO - [2024-01-21T23:42:49.142+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dag_crypto_downloader.py
+[2024-01-21T23:42:49.184+0000] {processor.py:840} INFO - DAG(s) 'daily_data_downloader' retrieved from /opt/airflow/dags/dag_crypto_downloader.py
+[2024-01-21T23:42:49.213+0000] {logging_mixin.py:188} INFO - [2024-01-21T23:42:49.213+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-01-21T23:42:49.233+0000] {logging_mixin.py:188} INFO - [2024-01-21T23:42:49.233+0000] {dag.py:3823} INFO - Setting next_dagrun for daily_data_downloader to 2024-01-21 08:00:00+00:00, run_after=2024-01-22 08:00:00+00:00
+[2024-01-21T23:42:49.306+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dag_crypto_downloader.py took 0.203 seconds
+[2024-01-21T23:43:19.547+0000] {processor.py:161} INFO - Started process (PID=84) to work on /opt/airflow/dags/dag_crypto_downloader.py
+[2024-01-21T23:43:19.560+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dag_crypto_downloader.py for tasks to queue
+[2024-01-21T23:43:19.562+0000] {logging_mixin.py:188} INFO - [2024-01-21T23:43:19.562+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dag_crypto_downloader.py
+[2024-01-21T23:43:19.573+0000] {processor.py:840} INFO - DAG(s) 'daily_data_downloader' retrieved from /opt/airflow/dags/dag_crypto_downloader.py
+[2024-01-21T23:43:19.597+0000] {logging_mixin.py:188} INFO - [2024-01-21T23:43:19.597+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2024-01-21T23:43:19.618+0000] {logging_mixin.py:188} INFO - [2024-01-21T23:43:19.618+0000] {dag.py:3823} INFO - Setting next_dagrun for daily_data_downloader to 2024-01-21 08:00:00+00:00, run_after=2024-01-22 08:00:00+00:00
+[2024-01-21T23:43:19.661+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dag_crypto_downloader.py took 0.118 seconds

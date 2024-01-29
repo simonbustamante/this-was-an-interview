@@ -1,0 +1,267 @@
+[2024-01-21T23:40:52.075+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: daily_data_downloader_and_plotter.download_crypto_data manual__2024-01-21T23:40:49.481433+00:00 [queued]>
+[2024-01-21T23:40:52.083+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: daily_data_downloader_and_plotter.download_crypto_data manual__2024-01-21T23:40:49.481433+00:00 [queued]>
+[2024-01-21T23:40:52.084+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 2
+[2024-01-21T23:40:52.127+0000] {taskinstance.py:2191} INFO - Executing <Task(PythonOperator): download_crypto_data> on 2024-01-21 23:40:49.481433+00:00
+[2024-01-21T23:40:52.143+0000] {standard_task_runner.py:60} INFO - Started process 56 to run task
+[2024-01-21T23:40:52.148+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'daily_data_downloader_and_plotter', 'download_crypto_data', 'manual__2024-01-21T23:40:49.481433+00:00', '--job-id', '59', '--raw', '--subdir', 'DAGS_FOLDER/dag_daily_data_downloader_and_plotter.py', '--cfg-path', '/tmp/tmpxitwdbz8']
+[2024-01-21T23:40:52.152+0000] {standard_task_runner.py:88} INFO - Job 59: Subtask download_crypto_data
+[2024-01-21T23:40:52.221+0000] {task_command.py:423} INFO - Running <TaskInstance: daily_data_downloader_and_plotter.download_crypto_data manual__2024-01-21T23:40:49.481433+00:00 [running]> on host d8f71f18ea69
+[2024-01-21T23:40:52.450+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='daily_data_downloader_and_plotter' AIRFLOW_CTX_TASK_ID='download_crypto_data' AIRFLOW_CTX_EXECUTION_DATE='2024-01-21T23:40:49.481433+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-01-21T23:40:49.481433+00:00'
+[2024-01-21T23:40:57.462+0000] {crypto_data_downloader_for_airflow.py:127} INFO - Esperando 5 segundos
+[2024-01-21T23:40:57.463+0000] {crypto_data_downloader_for_airflow.py:127} INFO - Esperando 5 segundos
+[2024-01-21T23:40:57.464+0000] {crypto_data_downloader_for_airflow.py:127} INFO - Esperando 5 segundos
+[2024-01-21T23:40:57.901+0000] {crypto_data_downloader_for_airflow.py:29} INFO - Data downloaded successfully
+[2024-01-21T23:40:57.904+0000] {crypto_data_downloader_for_airflow.py:29} INFO - Data downloaded successfully
+[2024-01-21T23:40:57.907+0000] {crypto_data_downloader_for_airflow.py:134} INFO - Saving data for 2023-12-24
+[2024-01-21T23:40:57.908+0000] {crypto_data_downloader_for_airflow.py:29} INFO - Data downloaded successfully
+[2024-01-21T23:40:57.920+0000] {crypto_data_downloader_for_airflow.py:134} INFO - Saving data for 2023-12-23
+[2024-01-21T23:40:57.924+0000] {crypto_data_downloader_for_airflow.py:134} INFO - Saving data for 2023-12-22
+[2024-01-21T23:40:57.926+0000] {crypto_data_downloader_for_airflow.py:39} INFO - Data saved to bitcoin_2023-12-24.json
+[2024-01-21T23:40:57.936+0000] {crypto_data_downloader_for_airflow.py:39} INFO - Data saved to bitcoin_2023-12-22.json
+[2024-01-21T23:40:57.937+0000] {crypto_data_downloader_for_airflow.py:39} INFO - Data saved to bitcoin_2023-12-23.json
+[2024-01-21T23:40:57.937+0000] {crypto_data_downloader_for_airflow.py:137} INFO - Saving data for 2023-12-24 on db
+[2024-01-21T23:40:57.938+0000] {crypto_data_downloader_for_airflow.py:137} INFO - Saving data for 2023-12-22 on db
+[2024-01-21T23:40:57.939+0000] {crypto_data_downloader_for_airflow.py:137} INFO - Saving data for 2023-12-23 on db
+[2024-01-21T23:40:57.940+0000] {crypto_data_downloader_for_airflow.py:119} INFO - Saving on postgresql
+[2024-01-21T23:40:57.941+0000] {crypto_data_downloader_for_airflow.py:119} INFO - Saving on postgresql
+[2024-01-21T23:40:57.942+0000] {crypto_data_downloader_for_airflow.py:119} INFO - Saving on postgresql
+[2024-01-21T23:40:57.945+0000] {crypto_data_downloader_for_airflow.py:75} INFO - Inserting or updating data for bitcoin on 2023-12-24: Price - 43752.03088478376
+[2024-01-21T23:40:57.964+0000] {crypto_data_downloader_for_airflow.py:75} INFO - Inserting or updating data for bitcoin on 2023-12-22: Price - 43849.69959939619
+[2024-01-21T23:40:57.966+0000] {crypto_data_downloader_for_airflow.py:75} INFO - Inserting or updating data for bitcoin on 2023-12-23: Price - 44003.6960216438
+[2024-01-21T23:40:58.004+0000] {crypto_data_downloader_for_airflow.py:99} INFO - Calculating Max and Min for bitcoin in 2023-12-24 00:00:00
+[2024-01-21T23:40:58.022+0000] {crypto_data_downloader_for_airflow.py:112} INFO - Result: (42074.70715618848, 44003.6960216438)
+[2024-01-21T23:40:58.024+0000] {crypto_data_downloader_for_airflow.py:83} INFO - Calculating max and min (42074.70715618848, 44003.6960216438) for Coin Id bitcoin on date 2023-12-24 00:00:00
+[2024-01-21T23:40:58.034+0000] {crypto_data_downloader_for_airflow.py:99} INFO - Calculating Max and Min for bitcoin in 2023-12-22 00:00:00
+[2024-01-21T23:40:58.041+0000] {crypto_data_downloader_for_airflow.py:99} INFO - Calculating Max and Min for bitcoin in 2023-12-23 00:00:00
+[2024-01-21T23:40:58.049+0000] {crypto_data_downloader_for_airflow.py:112} INFO - Result: (42074.70715618848, 44003.6960216438)
+[2024-01-21T23:40:58.051+0000] {crypto_data_downloader_for_airflow.py:83} INFO - Calculating max and min (42074.70715618848, 44003.6960216438) for Coin Id bitcoin on date 2023-12-22 00:00:00
+[2024-01-21T23:40:58.057+0000] {crypto_data_downloader_for_airflow.py:112} INFO - Result: (42074.70715618848, 44003.6960216438)
+[2024-01-21T23:40:58.058+0000] {crypto_data_downloader_for_airflow.py:83} INFO - Calculating max and min (42074.70715618848, 44003.6960216438) for Coin Id bitcoin on date 2023-12-23 00:00:00
+[2024-01-21T23:41:03.080+0000] {crypto_data_downloader_for_airflow.py:127} INFO - Esperando 5 segundos
+[2024-01-21T23:41:03.102+0000] {crypto_data_downloader_for_airflow.py:127} INFO - Esperando 5 segundos
+[2024-01-21T23:41:03.129+0000] {crypto_data_downloader_for_airflow.py:127} INFO - Esperando 5 segundos
+[2024-01-21T23:41:03.528+0000] {crypto_data_downloader_for_airflow.py:29} INFO - Data downloaded successfully
+[2024-01-21T23:41:03.536+0000] {crypto_data_downloader_for_airflow.py:134} INFO - Saving data for 2023-12-26
+[2024-01-21T23:41:03.540+0000] {crypto_data_downloader_for_airflow.py:29} INFO - Data downloaded successfully
+[2024-01-21T23:41:03.543+0000] {crypto_data_downloader_for_airflow.py:39} INFO - Data saved to bitcoin_2023-12-26.json
+[2024-01-21T23:41:03.544+0000] {crypto_data_downloader_for_airflow.py:29} INFO - Data downloaded successfully
+[2024-01-21T23:41:03.545+0000] {crypto_data_downloader_for_airflow.py:137} INFO - Saving data for 2023-12-26 on db
+[2024-01-21T23:41:03.549+0000] {crypto_data_downloader_for_airflow.py:134} INFO - Saving data for 2023-12-25
+[2024-01-21T23:41:03.552+0000] {crypto_data_downloader_for_airflow.py:134} INFO - Saving data for 2023-12-27
+[2024-01-21T23:41:03.552+0000] {crypto_data_downloader_for_airflow.py:119} INFO - Saving on postgresql
+[2024-01-21T23:41:03.556+0000] {crypto_data_downloader_for_airflow.py:75} INFO - Inserting or updating data for bitcoin on 2023-12-26: Price - 43638.236302200916
+[2024-01-21T23:41:03.560+0000] {crypto_data_downloader_for_airflow.py:39} INFO - Data saved to bitcoin_2023-12-25.json
+[2024-01-21T23:41:03.560+0000] {crypto_data_downloader_for_airflow.py:39} INFO - Data saved to bitcoin_2023-12-27.json
+[2024-01-21T23:41:03.560+0000] {crypto_data_downloader_for_airflow.py:137} INFO - Saving data for 2023-12-25 on db
+[2024-01-21T23:41:03.561+0000] {crypto_data_downloader_for_airflow.py:137} INFO - Saving data for 2023-12-27 on db
+[2024-01-21T23:41:03.561+0000] {crypto_data_downloader_for_airflow.py:119} INFO - Saving on postgresql
+[2024-01-21T23:41:03.562+0000] {crypto_data_downloader_for_airflow.py:119} INFO - Saving on postgresql
+[2024-01-21T23:41:03.562+0000] {crypto_data_downloader_for_airflow.py:75} INFO - Inserting or updating data for bitcoin on 2023-12-25: Price - 43034.971063091514
+[2024-01-21T23:41:03.563+0000] {crypto_data_downloader_for_airflow.py:75} INFO - Inserting or updating data for bitcoin on 2023-12-27: Price - 42516.426940282516
+[2024-01-21T23:41:03.589+0000] {crypto_data_downloader_for_airflow.py:99} INFO - Calculating Max and Min for bitcoin in 2023-12-26 00:00:00
+[2024-01-21T23:41:03.597+0000] {crypto_data_downloader_for_airflow.py:112} INFO - Result: (42074.70715618848, 44003.6960216438)
+[2024-01-21T23:41:03.599+0000] {crypto_data_downloader_for_airflow.py:83} INFO - Calculating max and min (42074.70715618848, 44003.6960216438) for Coin Id bitcoin on date 2023-12-26 00:00:00
+[2024-01-21T23:41:03.614+0000] {crypto_data_downloader_for_airflow.py:99} INFO - Calculating Max and Min for bitcoin in 2023-12-27 00:00:00
+[2024-01-21T23:41:03.615+0000] {crypto_data_downloader_for_airflow.py:99} INFO - Calculating Max and Min for bitcoin in 2023-12-25 00:00:00
+[2024-01-21T23:41:03.623+0000] {crypto_data_downloader_for_airflow.py:112} INFO - Result: (42074.70715618848, 44003.6960216438)
+[2024-01-21T23:41:03.628+0000] {crypto_data_downloader_for_airflow.py:83} INFO - Calculating max and min (42074.70715618848, 44003.6960216438) for Coin Id bitcoin on date 2023-12-27 00:00:00
+[2024-01-21T23:41:03.633+0000] {crypto_data_downloader_for_airflow.py:112} INFO - Result: (42074.70715618848, 44003.6960216438)
+[2024-01-21T23:41:03.634+0000] {crypto_data_downloader_for_airflow.py:83} INFO - Calculating max and min (42074.70715618848, 44003.6960216438) for Coin Id bitcoin on date 2023-12-25 00:00:00
+[2024-01-21T23:41:08.642+0000] {crypto_data_downloader_for_airflow.py:127} INFO - Esperando 5 segundos
+[2024-01-21T23:41:08.666+0000] {crypto_data_downloader_for_airflow.py:127} INFO - Esperando 5 segundos
+[2024-01-21T23:41:08.690+0000] {crypto_data_downloader_for_airflow.py:127} INFO - Esperando 5 segundos
+[2024-01-21T23:41:09.155+0000] {crypto_data_downloader_for_airflow.py:29} INFO - Data downloaded successfully
+[2024-01-21T23:41:09.165+0000] {crypto_data_downloader_for_airflow.py:134} INFO - Saving data for 2023-12-29
+[2024-01-21T23:41:09.176+0000] {crypto_data_downloader_for_airflow.py:29} INFO - Data downloaded successfully
+[2024-01-21T23:41:09.189+0000] {crypto_data_downloader_for_airflow.py:134} INFO - Saving data for 2023-12-28
+[2024-01-21T23:41:09.193+0000] {crypto_data_downloader_for_airflow.py:39} INFO - Data saved to bitcoin_2023-12-29.json
+[2024-01-21T23:41:09.194+0000] {crypto_data_downloader_for_airflow.py:137} INFO - Saving data for 2023-12-29 on db
+[2024-01-21T23:41:09.194+0000] {crypto_data_downloader_for_airflow.py:119} INFO - Saving on postgresql
+[2024-01-21T23:41:09.196+0000] {crypto_data_downloader_for_airflow.py:75} INFO - Inserting or updating data for bitcoin on 2023-12-29: Price - 42600.65063315619
+[2024-01-21T23:41:09.212+0000] {crypto_data_downloader_for_airflow.py:29} INFO - Data downloaded successfully
+[2024-01-21T23:41:09.219+0000] {crypto_data_downloader_for_airflow.py:134} INFO - Saving data for 2023-12-30
+[2024-01-21T23:41:09.221+0000] {crypto_data_downloader_for_airflow.py:39} INFO - Data saved to bitcoin_2023-12-28.json
+[2024-01-21T23:41:09.222+0000] {crypto_data_downloader_for_airflow.py:137} INFO - Saving data for 2023-12-28 on db
+[2024-01-21T23:41:09.223+0000] {crypto_data_downloader_for_airflow.py:119} INFO - Saving on postgresql
+[2024-01-21T23:41:09.224+0000] {crypto_data_downloader_for_airflow.py:75} INFO - Inserting or updating data for bitcoin on 2023-12-28: Price - 43418.46777504291
+[2024-01-21T23:41:09.229+0000] {crypto_data_downloader_for_airflow.py:39} INFO - Data saved to bitcoin_2023-12-30.json
+[2024-01-21T23:41:09.230+0000] {crypto_data_downloader_for_airflow.py:137} INFO - Saving data for 2023-12-30 on db
+[2024-01-21T23:41:09.230+0000] {crypto_data_downloader_for_airflow.py:119} INFO - Saving on postgresql
+[2024-01-21T23:41:09.231+0000] {crypto_data_downloader_for_airflow.py:75} INFO - Inserting or updating data for bitcoin on 2023-12-30: Price - 42074.70715618848
+[2024-01-21T23:41:09.281+0000] {crypto_data_downloader_for_airflow.py:99} INFO - Calculating Max and Min for bitcoin in 2023-12-30 00:00:00
+[2024-01-21T23:41:09.282+0000] {crypto_data_downloader_for_airflow.py:99} INFO - Calculating Max and Min for bitcoin in 2023-12-28 00:00:00
+[2024-01-21T23:41:09.283+0000] {crypto_data_downloader_for_airflow.py:99} INFO - Calculating Max and Min for bitcoin in 2023-12-29 00:00:00
+[2024-01-21T23:41:09.290+0000] {crypto_data_downloader_for_airflow.py:112} INFO - Result: (42074.70715618848, 44003.6960216438)
+[2024-01-21T23:41:09.291+0000] {crypto_data_downloader_for_airflow.py:112} INFO - Result: (42074.70715618848, 44003.6960216438)
+[2024-01-21T23:41:09.292+0000] {crypto_data_downloader_for_airflow.py:83} INFO - Calculating max and min (42074.70715618848, 44003.6960216438) for Coin Id bitcoin on date 2023-12-29 00:00:00
+[2024-01-21T23:41:09.291+0000] {crypto_data_downloader_for_airflow.py:83} INFO - Calculating max and min (42074.70715618848, 44003.6960216438) for Coin Id bitcoin on date 2023-12-30 00:00:00
+[2024-01-21T23:41:09.296+0000] {crypto_data_downloader_for_airflow.py:112} INFO - Result: (42074.70715618848, 44003.6960216438)
+[2024-01-21T23:41:09.296+0000] {crypto_data_downloader_for_airflow.py:83} INFO - Calculating max and min (42074.70715618848, 44003.6960216438) for Coin Id bitcoin on date 2023-12-28 00:00:00
+[2024-01-21T23:41:14.338+0000] {crypto_data_downloader_for_airflow.py:127} INFO - Esperando 5 segundos
+[2024-01-21T23:41:14.383+0000] {crypto_data_downloader_for_airflow.py:127} INFO - Esperando 5 segundos
+[2024-01-21T23:41:14.434+0000] {crypto_data_downloader_for_airflow.py:127} INFO - Esperando 5 segundos
+[2024-01-21T23:41:14.676+0000] {crypto_data_downloader_for_airflow.py:29} INFO - Data downloaded successfully
+[2024-01-21T23:41:14.681+0000] {crypto_data_downloader_for_airflow.py:134} INFO - Saving data for 2023-12-31
+[2024-01-21T23:41:14.683+0000] {crypto_data_downloader_for_airflow.py:29} INFO - Data downloaded successfully
+[2024-01-21T23:41:14.690+0000] {crypto_data_downloader_for_airflow.py:134} INFO - Saving data for 2024-01-01
+[2024-01-21T23:41:14.692+0000] {crypto_data_downloader_for_airflow.py:39} INFO - Data saved to bitcoin_2023-12-31.json
+[2024-01-21T23:41:14.693+0000] {crypto_data_downloader_for_airflow.py:137} INFO - Saving data for 2023-12-31 on db
+[2024-01-21T23:41:14.697+0000] {crypto_data_downloader_for_airflow.py:119} INFO - Saving on postgresql
+[2024-01-21T23:41:14.697+0000] {crypto_data_downloader_for_airflow.py:39} INFO - Data saved to bitcoin_2024-01-01.json
+[2024-01-21T23:41:14.699+0000] {crypto_data_downloader_for_airflow.py:75} INFO - Inserting or updating data for bitcoin on 2023-12-31: Price - 42220.61140121376
+[2024-01-21T23:41:14.700+0000] {crypto_data_downloader_for_airflow.py:137} INFO - Saving data for 2024-01-01 on db
+[2024-01-21T23:41:14.709+0000] {crypto_data_downloader_for_airflow.py:119} INFO - Saving on postgresql
+[2024-01-21T23:41:14.710+0000] {crypto_data_downloader_for_airflow.py:75} INFO - Inserting or updating data for bitcoin on 2024-01-01: Price - 42208.202176186474
+[2024-01-21T23:41:14.714+0000] {crypto_data_downloader_for_airflow.py:29} INFO - Data downloaded successfully
+[2024-01-21T23:41:14.717+0000] {crypto_data_downloader_for_airflow.py:134} INFO - Saving data for 2024-01-02
+[2024-01-21T23:41:14.719+0000] {crypto_data_downloader_for_airflow.py:39} INFO - Data saved to bitcoin_2024-01-02.json
+[2024-01-21T23:41:14.719+0000] {crypto_data_downloader_for_airflow.py:137} INFO - Saving data for 2024-01-02 on db
+[2024-01-21T23:41:14.719+0000] {crypto_data_downloader_for_airflow.py:119} INFO - Saving on postgresql
+[2024-01-21T23:41:14.720+0000] {crypto_data_downloader_for_airflow.py:75} INFO - Inserting or updating data for bitcoin on 2024-01-02: Price - 44168.68118687473
+[2024-01-21T23:41:14.760+0000] {crypto_data_downloader_for_airflow.py:99} INFO - Calculating Max and Min for bitcoin in 2023-12-31 00:00:00
+[2024-01-21T23:41:14.766+0000] {crypto_data_downloader_for_airflow.py:112} INFO - Result: (42074.70715618848, 44003.6960216438)
+[2024-01-21T23:41:14.767+0000] {crypto_data_downloader_for_airflow.py:83} INFO - Calculating max and min (42074.70715618848, 44003.6960216438) for Coin Id bitcoin on date 2023-12-31 00:00:00
+[2024-01-21T23:41:14.785+0000] {crypto_data_downloader_for_airflow.py:99} INFO - Calculating Max and Min for bitcoin in 2024-01-01 00:00:00
+[2024-01-21T23:41:14.786+0000] {crypto_data_downloader_for_airflow.py:99} INFO - Calculating Max and Min for bitcoin in 2024-01-02 00:00:00
+[2024-01-21T23:41:14.800+0000] {crypto_data_downloader_for_airflow.py:112} INFO - Result: (41261.39479801012, 46936.185561217506)
+[2024-01-21T23:41:14.802+0000] {crypto_data_downloader_for_airflow.py:83} INFO - Calculating max and min (41261.39479801012, 46936.185561217506) for Coin Id bitcoin on date 2024-01-02 00:00:00
+[2024-01-21T23:41:14.804+0000] {crypto_data_downloader_for_airflow.py:112} INFO - Result: (41261.39479801012, 46936.185561217506)
+[2024-01-21T23:41:14.811+0000] {crypto_data_downloader_for_airflow.py:83} INFO - Calculating max and min (41261.39479801012, 46936.185561217506) for Coin Id bitcoin on date 2024-01-01 00:00:00
+[2024-01-21T23:41:19.815+0000] {crypto_data_downloader_for_airflow.py:127} INFO - Esperando 5 segundos
+[2024-01-21T23:41:19.846+0000] {crypto_data_downloader_for_airflow.py:127} INFO - Esperando 5 segundos
+[2024-01-21T23:41:19.874+0000] {crypto_data_downloader_for_airflow.py:127} INFO - Esperando 5 segundos
+[2024-01-21T23:41:20.214+0000] {crypto_data_downloader_for_airflow.py:29} INFO - Data downloaded successfully
+[2024-01-21T23:41:20.215+0000] {crypto_data_downloader_for_airflow.py:29} INFO - Data downloaded successfully
+[2024-01-21T23:41:20.220+0000] {crypto_data_downloader_for_airflow.py:134} INFO - Saving data for 2024-01-04
+[2024-01-21T23:41:20.225+0000] {crypto_data_downloader_for_airflow.py:134} INFO - Saving data for 2024-01-05
+[2024-01-21T23:41:20.228+0000] {crypto_data_downloader_for_airflow.py:39} INFO - Data saved to bitcoin_2024-01-04.json
+[2024-01-21T23:41:20.228+0000] {crypto_data_downloader_for_airflow.py:137} INFO - Saving data for 2024-01-04 on db
+[2024-01-21T23:41:20.228+0000] {crypto_data_downloader_for_airflow.py:119} INFO - Saving on postgresql
+[2024-01-21T23:41:20.231+0000] {crypto_data_downloader_for_airflow.py:75} INFO - Inserting or updating data for bitcoin on 2024-01-04: Price - 42821.558989157995
+[2024-01-21T23:41:20.233+0000] {crypto_data_downloader_for_airflow.py:39} INFO - Data saved to bitcoin_2024-01-05.json
+[2024-01-21T23:41:20.233+0000] {crypto_data_downloader_for_airflow.py:137} INFO - Saving data for 2024-01-05 on db
+[2024-01-21T23:41:20.233+0000] {crypto_data_downloader_for_airflow.py:119} INFO - Saving on postgresql
+[2024-01-21T23:41:20.234+0000] {crypto_data_downloader_for_airflow.py:75} INFO - Inserting or updating data for bitcoin on 2024-01-05: Price - 44195.57856209971
+[2024-01-21T23:41:20.259+0000] {crypto_data_downloader_for_airflow.py:99} INFO - Calculating Max and Min for bitcoin in 2024-01-04 00:00:00
+[2024-01-21T23:41:20.268+0000] {crypto_data_downloader_for_airflow.py:112} INFO - Result: (41261.39479801012, 46936.185561217506)
+[2024-01-21T23:41:20.269+0000] {crypto_data_downloader_for_airflow.py:83} INFO - Calculating max and min (41261.39479801012, 46936.185561217506) for Coin Id bitcoin on date 2024-01-04 00:00:00
+[2024-01-21T23:41:20.283+0000] {crypto_data_downloader_for_airflow.py:99} INFO - Calculating Max and Min for bitcoin in 2024-01-05 00:00:00
+[2024-01-21T23:41:20.286+0000] {crypto_data_downloader_for_airflow.py:112} INFO - Result: (41261.39479801012, 46936.185561217506)
+[2024-01-21T23:41:20.286+0000] {crypto_data_downloader_for_airflow.py:83} INFO - Calculating max and min (41261.39479801012, 46936.185561217506) for Coin Id bitcoin on date 2024-01-05 00:00:00
+[2024-01-21T23:41:20.326+0000] {crypto_data_downloader_for_airflow.py:29} INFO - Data downloaded successfully
+[2024-01-21T23:41:20.327+0000] {crypto_data_downloader_for_airflow.py:134} INFO - Saving data for 2024-01-03
+[2024-01-21T23:41:20.328+0000] {crypto_data_downloader_for_airflow.py:39} INFO - Data saved to bitcoin_2024-01-03.json
+[2024-01-21T23:41:20.329+0000] {crypto_data_downloader_for_airflow.py:137} INFO - Saving data for 2024-01-03 on db
+[2024-01-21T23:41:20.329+0000] {crypto_data_downloader_for_airflow.py:119} INFO - Saving on postgresql
+[2024-01-21T23:41:20.329+0000] {crypto_data_downloader_for_airflow.py:75} INFO - Inserting or updating data for bitcoin on 2024-01-03: Price - 44994.67388689237
+[2024-01-21T23:41:20.357+0000] {crypto_data_downloader_for_airflow.py:99} INFO - Calculating Max and Min for bitcoin in 2024-01-03 00:00:00
+[2024-01-21T23:41:20.360+0000] {crypto_data_downloader_for_airflow.py:112} INFO - Result: (41261.39479801012, 46936.185561217506)
+[2024-01-21T23:41:20.360+0000] {crypto_data_downloader_for_airflow.py:83} INFO - Calculating max and min (41261.39479801012, 46936.185561217506) for Coin Id bitcoin on date 2024-01-03 00:00:00
+[2024-01-21T23:41:25.310+0000] {crypto_data_downloader_for_airflow.py:127} INFO - Esperando 5 segundos
+[2024-01-21T23:41:25.336+0000] {crypto_data_downloader_for_airflow.py:127} INFO - Esperando 5 segundos
+[2024-01-21T23:41:25.426+0000] {crypto_data_downloader_for_airflow.py:127} INFO - Esperando 5 segundos
+[2024-01-21T23:41:25.570+0000] {crypto_data_downloader_for_airflow.py:29} INFO - Data downloaded successfully
+[2024-01-21T23:41:25.571+0000] {crypto_data_downloader_for_airflow.py:134} INFO - Saving data for 2024-01-06
+[2024-01-21T23:41:25.573+0000] {crypto_data_downloader_for_airflow.py:39} INFO - Data saved to bitcoin_2024-01-06.json
+[2024-01-21T23:41:25.573+0000] {crypto_data_downloader_for_airflow.py:137} INFO - Saving data for 2024-01-06 on db
+[2024-01-21T23:41:25.573+0000] {crypto_data_downloader_for_airflow.py:119} INFO - Saving on postgresql
+[2024-01-21T23:41:25.574+0000] {crypto_data_downloader_for_airflow.py:75} INFO - Inserting or updating data for bitcoin on 2024-01-06: Price - 44113.69973389081
+[2024-01-21T23:41:25.605+0000] {crypto_data_downloader_for_airflow.py:99} INFO - Calculating Max and Min for bitcoin in 2024-01-06 00:00:00
+[2024-01-21T23:41:25.608+0000] {crypto_data_downloader_for_airflow.py:112} INFO - Result: (41261.39479801012, 46936.185561217506)
+[2024-01-21T23:41:25.608+0000] {crypto_data_downloader_for_airflow.py:83} INFO - Calculating max and min (41261.39479801012, 46936.185561217506) for Coin Id bitcoin on date 2024-01-06 00:00:00
+[2024-01-21T23:41:25.647+0000] {crypto_data_downloader_for_airflow.py:29} INFO - Data downloaded successfully
+[2024-01-21T23:41:25.648+0000] {crypto_data_downloader_for_airflow.py:134} INFO - Saving data for 2024-01-07
+[2024-01-21T23:41:25.650+0000] {crypto_data_downloader_for_airflow.py:39} INFO - Data saved to bitcoin_2024-01-07.json
+[2024-01-21T23:41:25.650+0000] {crypto_data_downloader_for_airflow.py:137} INFO - Saving data for 2024-01-07 on db
+[2024-01-21T23:41:25.650+0000] {crypto_data_downloader_for_airflow.py:119} INFO - Saving on postgresql
+[2024-01-21T23:41:25.650+0000] {crypto_data_downloader_for_airflow.py:75} INFO - Inserting or updating data for bitcoin on 2024-01-07: Price - 43956.12071720152
+[2024-01-21T23:41:25.677+0000] {crypto_data_downloader_for_airflow.py:99} INFO - Calculating Max and Min for bitcoin in 2024-01-07 00:00:00
+[2024-01-21T23:41:25.678+0000] {crypto_data_downloader_for_airflow.py:112} INFO - Result: (41261.39479801012, 46936.185561217506)
+[2024-01-21T23:41:25.679+0000] {crypto_data_downloader_for_airflow.py:83} INFO - Calculating max and min (41261.39479801012, 46936.185561217506) for Coin Id bitcoin on date 2024-01-07 00:00:00
+[2024-01-21T23:41:25.752+0000] {crypto_data_downloader_for_airflow.py:29} INFO - Data downloaded successfully
+[2024-01-21T23:41:25.754+0000] {crypto_data_downloader_for_airflow.py:134} INFO - Saving data for 2024-01-08
+[2024-01-21T23:41:25.757+0000] {crypto_data_downloader_for_airflow.py:39} INFO - Data saved to bitcoin_2024-01-08.json
+[2024-01-21T23:41:25.758+0000] {crypto_data_downloader_for_airflow.py:137} INFO - Saving data for 2024-01-08 on db
+[2024-01-21T23:41:25.759+0000] {crypto_data_downloader_for_airflow.py:119} INFO - Saving on postgresql
+[2024-01-21T23:41:25.760+0000] {crypto_data_downloader_for_airflow.py:75} INFO - Inserting or updating data for bitcoin on 2024-01-08: Price - 43883.74387905174
+[2024-01-21T23:41:25.793+0000] {crypto_data_downloader_for_airflow.py:99} INFO - Calculating Max and Min for bitcoin in 2024-01-08 00:00:00
+[2024-01-21T23:41:25.797+0000] {crypto_data_downloader_for_airflow.py:112} INFO - Result: (41261.39479801012, 46936.185561217506)
+[2024-01-21T23:41:25.797+0000] {crypto_data_downloader_for_airflow.py:83} INFO - Calculating max and min (41261.39479801012, 46936.185561217506) for Coin Id bitcoin on date 2024-01-08 00:00:00
+[2024-01-21T23:41:30.646+0000] {crypto_data_downloader_for_airflow.py:127} INFO - Esperando 5 segundos
+[2024-01-21T23:41:30.706+0000] {crypto_data_downloader_for_airflow.py:127} INFO - Esperando 5 segundos
+[2024-01-21T23:41:30.830+0000] {crypto_data_downloader_for_airflow.py:127} INFO - Esperando 5 segundos
+[2024-01-21T23:41:30.911+0000] {crypto_data_downloader_for_airflow.py:29} INFO - Data downloaded successfully
+[2024-01-21T23:41:30.913+0000] {crypto_data_downloader_for_airflow.py:134} INFO - Saving data for 2024-01-09
+[2024-01-21T23:41:30.914+0000] {crypto_data_downloader_for_airflow.py:39} INFO - Data saved to bitcoin_2024-01-09.json
+[2024-01-21T23:41:30.915+0000] {crypto_data_downloader_for_airflow.py:137} INFO - Saving data for 2024-01-09 on db
+[2024-01-21T23:41:30.915+0000] {crypto_data_downloader_for_airflow.py:119} INFO - Saving on postgresql
+[2024-01-21T23:41:30.915+0000] {crypto_data_downloader_for_airflow.py:75} INFO - Inserting or updating data for bitcoin on 2024-01-09: Price - 46936.185561217506
+[2024-01-21T23:41:30.949+0000] {crypto_data_downloader_for_airflow.py:99} INFO - Calculating Max and Min for bitcoin in 2024-01-09 00:00:00
+[2024-01-21T23:41:30.960+0000] {crypto_data_downloader_for_airflow.py:112} INFO - Result: (41261.39479801012, 46936.185561217506)
+[2024-01-21T23:41:30.961+0000] {crypto_data_downloader_for_airflow.py:83} INFO - Calculating max and min (41261.39479801012, 46936.185561217506) for Coin Id bitcoin on date 2024-01-09 00:00:00
+[2024-01-21T23:41:30.970+0000] {crypto_data_downloader_for_airflow.py:29} INFO - Data downloaded successfully
+[2024-01-21T23:41:30.978+0000] {crypto_data_downloader_for_airflow.py:134} INFO - Saving data for 2024-01-10
+[2024-01-21T23:41:30.982+0000] {crypto_data_downloader_for_airflow.py:39} INFO - Data saved to bitcoin_2024-01-10.json
+[2024-01-21T23:41:30.983+0000] {crypto_data_downloader_for_airflow.py:137} INFO - Saving data for 2024-01-10 on db
+[2024-01-21T23:41:30.983+0000] {crypto_data_downloader_for_airflow.py:119} INFO - Saving on postgresql
+[2024-01-21T23:41:30.984+0000] {crypto_data_downloader_for_airflow.py:75} INFO - Inserting or updating data for bitcoin on 2024-01-10: Price - 46105.94607828697
+[2024-01-21T23:41:31.020+0000] {crypto_data_downloader_for_airflow.py:99} INFO - Calculating Max and Min for bitcoin in 2024-01-10 00:00:00
+[2024-01-21T23:41:31.022+0000] {crypto_data_downloader_for_airflow.py:112} INFO - Result: (41261.39479801012, 46936.185561217506)
+[2024-01-21T23:41:31.022+0000] {crypto_data_downloader_for_airflow.py:83} INFO - Calculating max and min (41261.39479801012, 46936.185561217506) for Coin Id bitcoin on date 2024-01-10 00:00:00
+[2024-01-21T23:41:31.266+0000] {crypto_data_downloader_for_airflow.py:29} INFO - Data downloaded successfully
+[2024-01-21T23:41:31.274+0000] {crypto_data_downloader_for_airflow.py:134} INFO - Saving data for 2024-01-11
+[2024-01-21T23:41:31.284+0000] {crypto_data_downloader_for_airflow.py:39} INFO - Data saved to bitcoin_2024-01-11.json
+[2024-01-21T23:41:31.285+0000] {crypto_data_downloader_for_airflow.py:137} INFO - Saving data for 2024-01-11 on db
+[2024-01-21T23:41:31.285+0000] {crypto_data_downloader_for_airflow.py:119} INFO - Saving on postgresql
+[2024-01-21T23:41:31.287+0000] {crypto_data_downloader_for_airflow.py:75} INFO - Inserting or updating data for bitcoin on 2024-01-11: Price - 46632.31314804979
+[2024-01-21T23:41:31.336+0000] {crypto_data_downloader_for_airflow.py:99} INFO - Calculating Max and Min for bitcoin in 2024-01-11 00:00:00
+[2024-01-21T23:41:31.344+0000] {crypto_data_downloader_for_airflow.py:112} INFO - Result: (41261.39479801012, 46936.185561217506)
+[2024-01-21T23:41:31.346+0000] {crypto_data_downloader_for_airflow.py:83} INFO - Calculating max and min (41261.39479801012, 46936.185561217506) for Coin Id bitcoin on date 2024-01-11 00:00:00
+[2024-01-21T23:41:35.998+0000] {crypto_data_downloader_for_airflow.py:127} INFO - Esperando 5 segundos
+[2024-01-21T23:41:36.058+0000] {crypto_data_downloader_for_airflow.py:127} INFO - Esperando 5 segundos
+[2024-01-21T23:41:36.273+0000] {crypto_data_downloader_for_airflow.py:29} INFO - Data downloaded successfully
+[2024-01-21T23:41:36.276+0000] {crypto_data_downloader_for_airflow.py:134} INFO - Saving data for 2024-01-12
+[2024-01-21T23:41:36.279+0000] {crypto_data_downloader_for_airflow.py:39} INFO - Data saved to bitcoin_2024-01-12.json
+[2024-01-21T23:41:36.279+0000] {crypto_data_downloader_for_airflow.py:137} INFO - Saving data for 2024-01-12 on db
+[2024-01-21T23:41:36.280+0000] {crypto_data_downloader_for_airflow.py:119} INFO - Saving on postgresql
+[2024-01-21T23:41:36.281+0000] {crypto_data_downloader_for_airflow.py:75} INFO - Inserting or updating data for bitcoin on 2024-01-12: Price - 46314.355541602694
+[2024-01-21T23:41:36.315+0000] {crypto_data_downloader_for_airflow.py:29} INFO - Data downloaded successfully
+[2024-01-21T23:41:36.316+0000] {crypto_data_downloader_for_airflow.py:134} INFO - Saving data for 2024-01-13
+[2024-01-21T23:41:36.318+0000] {crypto_data_downloader_for_airflow.py:39} INFO - Data saved to bitcoin_2024-01-13.json
+[2024-01-21T23:41:36.319+0000] {crypto_data_downloader_for_airflow.py:137} INFO - Saving data for 2024-01-13 on db
+[2024-01-21T23:41:36.319+0000] {crypto_data_downloader_for_airflow.py:119} INFO - Saving on postgresql
+[2024-01-21T23:41:36.319+0000] {crypto_data_downloader_for_airflow.py:75} INFO - Inserting or updating data for bitcoin on 2024-01-13: Price - 42893.92960550481
+[2024-01-21T23:41:36.368+0000] {crypto_data_downloader_for_airflow.py:99} INFO - Calculating Max and Min for bitcoin in 2024-01-12 00:00:00
+[2024-01-21T23:41:36.373+0000] {crypto_data_downloader_for_airflow.py:112} INFO - Result: (41261.39479801012, 46936.185561217506)
+[2024-01-21T23:41:36.374+0000] {crypto_data_downloader_for_airflow.py:83} INFO - Calculating max and min (41261.39479801012, 46936.185561217506) for Coin Id bitcoin on date 2024-01-12 00:00:00
+[2024-01-21T23:41:36.386+0000] {crypto_data_downloader_for_airflow.py:127} INFO - Esperando 5 segundos
+[2024-01-21T23:41:36.393+0000] {crypto_data_downloader_for_airflow.py:99} INFO - Calculating Max and Min for bitcoin in 2024-01-13 00:00:00
+[2024-01-21T23:41:36.401+0000] {crypto_data_downloader_for_airflow.py:112} INFO - Result: (41261.39479801012, 46936.185561217506)
+[2024-01-21T23:41:36.402+0000] {crypto_data_downloader_for_airflow.py:83} INFO - Calculating max and min (41261.39479801012, 46936.185561217506) for Coin Id bitcoin on date 2024-01-13 00:00:00
+[2024-01-21T23:41:36.624+0000] {crypto_data_downloader_for_airflow.py:32} ERROR - Failed to retrieve data: 429
+[2024-01-21T23:41:36.624+0000] {crypto_data_downloader_for_airflow.py:141} ERROR - Error processing 2024-01-14: Failed to retrieve data: 429
+[2024-01-21T23:41:41.422+0000] {crypto_data_downloader_for_airflow.py:127} INFO - Esperando 5 segundos
+[2024-01-21T23:41:41.446+0000] {crypto_data_downloader_for_airflow.py:127} INFO - Esperando 5 segundos
+[2024-01-21T23:41:41.630+0000] {crypto_data_downloader_for_airflow.py:127} INFO - Esperando 5 segundos
+[2024-01-21T23:41:41.652+0000] {crypto_data_downloader_for_airflow.py:32} ERROR - Failed to retrieve data: 429
+[2024-01-21T23:41:41.652+0000] {crypto_data_downloader_for_airflow.py:141} ERROR - Error processing 2024-01-16: Failed to retrieve data: 429
+[2024-01-21T23:41:41.664+0000] {crypto_data_downloader_for_airflow.py:32} ERROR - Failed to retrieve data: 429
+[2024-01-21T23:41:41.664+0000] {crypto_data_downloader_for_airflow.py:141} ERROR - Error processing 2024-01-15: Failed to retrieve data: 429
+[2024-01-21T23:41:42.122+0000] {crypto_data_downloader_for_airflow.py:32} ERROR - Failed to retrieve data: 429
+[2024-01-21T23:41:42.123+0000] {crypto_data_downloader_for_airflow.py:141} ERROR - Error processing 2024-01-17: Failed to retrieve data: 429
+[2024-01-21T23:41:46.658+0000] {crypto_data_downloader_for_airflow.py:127} INFO - Esperando 5 segundos
+[2024-01-21T23:41:46.671+0000] {crypto_data_downloader_for_airflow.py:127} INFO - Esperando 5 segundos
+[2024-01-21T23:41:46.938+0000] {crypto_data_downloader_for_airflow.py:32} ERROR - Failed to retrieve data: 429
+[2024-01-21T23:41:46.940+0000] {crypto_data_downloader_for_airflow.py:141} ERROR - Error processing 2024-01-18: Failed to retrieve data: 429
+[2024-01-21T23:41:46.948+0000] {crypto_data_downloader_for_airflow.py:32} ERROR - Failed to retrieve data: 429
+[2024-01-21T23:41:46.949+0000] {crypto_data_downloader_for_airflow.py:141} ERROR - Error processing 2024-01-19: Failed to retrieve data: 429
+[2024-01-21T23:41:47.130+0000] {crypto_data_downloader_for_airflow.py:127} INFO - Esperando 5 segundos
+[2024-01-21T23:41:47.380+0000] {crypto_data_downloader_for_airflow.py:32} ERROR - Failed to retrieve data: 429
+[2024-01-21T23:41:47.381+0000] {crypto_data_downloader_for_airflow.py:141} ERROR - Error processing 2024-01-20: Failed to retrieve data: 429
+[2024-01-21T23:41:51.949+0000] {crypto_data_downloader_for_airflow.py:127} INFO - Esperando 5 segundos
+[2024-01-21T23:41:52.259+0000] {crypto_data_downloader_for_airflow.py:32} ERROR - Failed to retrieve data: 429
+[2024-01-21T23:41:52.260+0000] {crypto_data_downloader_for_airflow.py:141} ERROR - Error processing 2024-01-21: Failed to retrieve data: 429
+[2024-01-21T23:41:52.262+0000] {python.py:201} INFO - Done. Returned value was: None
+[2024-01-21T23:41:52.274+0000] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=daily_data_downloader_and_plotter, task_id=download_crypto_data, execution_date=20240121T234049, start_date=20240121T234052, end_date=20240121T234152
+[2024-01-21T23:41:52.347+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2024-01-21T23:41:52.375+0000] {taskinstance.py:3280} INFO - 1 downstream tasks scheduled from follow-on schedule check

@@ -1,0 +1,28 @@
+### 4.2.1. By Webserver
+
+* Open airflow.cfg an enable Test by web browser
+
+```
+test_connection = Enabled
+```
+
+* Restart airflow
+
+```
+docker-compose stop
+```
+```
+docker-compose up
+```
+
+* Browse to **Admin->Connection**
+* Click on **+** Icon
+* Set **Conn Id: postgres_stock_conn**
+* Set **Conn Type: Postgres**
+* Set **Host: postgres** NOTE: This is the name of postgres on the docker-compose stack
+* Set **DB/Schema: airflow**
+* Set **Login: airflow**
+* Set **Password: airflow**
+* Set **Port: 5432**
+* Press **Test**
+* Press **Save**

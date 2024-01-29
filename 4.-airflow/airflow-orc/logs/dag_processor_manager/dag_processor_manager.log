@@ -1,0 +1,69 @@
+[2024-01-21T23:40:17.054+0000] {manager.py:469} INFO - Processing files using up to 2 processes at a time 
+[2024-01-21T23:40:17.054+0000] {manager.py:470} INFO - Process each file at most once every 30 seconds
+[2024-01-21T23:40:17.054+0000] {manager.py:471} INFO - Checking for new files in /opt/airflow/dags every 300 seconds
+[2024-01-21T23:40:17.055+0000] {manager.py:738} INFO - Searching for files in /opt/airflow/dags
+[2024-01-21T23:40:17.059+0000] {manager.py:741} INFO - There are 2 files in /opt/airflow/dags
+[2024-01-21T23:40:17.193+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                     PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------------------  -----  ---------  --------  ----------  --------------  ----------
+/opt/airflow/dags/dag_daily_data_downloader_and_plotter.py     31  0.07s             0           0
+/opt/airflow/dags/dag_crypto_downloader.py                     30  0.08s             0           0
+================================================================================
+[2024-01-21T23:40:47.724+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                     PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_daily_data_downloader_and_plotter.py                           1           0  1.78s           2024-01-21T23:40:18
+/opt/airflow/dags/dag_crypto_downloader.py                     39  0.01s             1           0  0.43s           2024-01-21T23:40:17
+================================================================================
+[2024-01-21T23:41:18.162+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                     PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_daily_data_downloader_and_plotter.py                           1           0  1.27s           2024-01-21T23:40:50
+/opt/airflow/dags/dag_crypto_downloader.py                     49  0.01s             1           0  0.19s           2024-01-21T23:40:47
+================================================================================
+[2024-01-21T23:41:48.392+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                     PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_daily_data_downloader_and_plotter.py                           1           0  0.97s           2024-01-21T23:41:21
+/opt/airflow/dags/dag_crypto_downloader.py                     58  0.02s             1           0  0.19s           2024-01-21T23:41:18
+================================================================================
+[2024-01-21T23:42:18.706+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                     PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_daily_data_downloader_and_plotter.py                           1           0  1.03s           2024-01-21T23:41:52
+/opt/airflow/dags/dag_crypto_downloader.py                     67  0.01s             1           0  0.16s           2024-01-21T23:41:48
+================================================================================
+[2024-01-21T23:42:48.716+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_daily_data_downloader_and_plotter.py                           1           0  0.80s           2024-01-21T23:42:23
+/opt/airflow/dags/dag_crypto_downloader.py                                           1           0  0.17s           2024-01-21T23:42:18
+================================================================================
+[2024-01-21T23:43:19.164+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_daily_data_downloader_and_plotter.py                           1           0  0.85s           2024-01-21T23:42:54
+/opt/airflow/dags/dag_crypto_downloader.py                                           1           0  0.26s           2024-01-21T23:42:49
+================================================================================
+[2024-01-21T23:43:33.520+0000] {manager.py:451} INFO - Exiting gracefully upon receiving signal 15
